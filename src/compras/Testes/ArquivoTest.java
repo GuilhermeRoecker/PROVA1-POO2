@@ -29,8 +29,8 @@ public class ArquivoTest {
 
     @Test
     public void testRealizaCompraOk() {
-        compras.getProdutos().add(new Produto("Tomate", 2.0, 10));
-        compras.getCompras().add(new Compra("Tomate", 3));
+        compras.getProdutos().add(new Produto("Maçã", 1.50, 10));
+        compras.getCompras().add(new Compra("Maçã", 3));
         compras.realizaCompra();
         Produto produto = compras.getProdutos().get(0);
         assertEquals(7, produto.getQtdEstoque());
