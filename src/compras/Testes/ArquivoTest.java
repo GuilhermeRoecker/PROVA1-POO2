@@ -15,8 +15,8 @@ public class ArquivoTest {
     @Test
     public void testLerArquivoProdutos() {
         compras.lerArquivoProdutos();
-        Produto terceiro = compras.getProdutos().get(2);
-        assertEquals("Cebola, 8, R$ 5.0", terceiro.toString());
+        Produto terceiro = compras.getProdutos().get(13);
+        assertEquals("Maçã, 10, R$ 1.5", terceiro.toString());
     }
 
     @Test
