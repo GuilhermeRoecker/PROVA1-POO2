@@ -39,7 +39,7 @@ public class Arquivo {
                 String[] parts = linha.split(",");
                 String nome = parts[0];
                 int qtd = Integer.parseInt(parts[1]);
-                double preco = Double.parseDouble(parts[2].replace("R$", "").trim() + parts[3].replace(",", ".").trim());
+                double preco = Double.parseDouble(parts[2].replace("R$", "").trim() + "." + parts[3]);
                 produtos.add(new Produto(nome, preco, qtd));
             }
             br.close();
