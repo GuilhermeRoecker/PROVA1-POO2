@@ -18,9 +18,9 @@ public class Arquivo {
             BufferedReader br = new BufferedReader(fr);
             String linha;
             while ((linha = br.readLine()) != null) {
-                String[] parts = linha.split(",");
-                String nomeProduto = parts[0];
-                int qtd = Integer.parseInt(parts[1]);
+                String[] partes = linha.split(",");
+                String nomeProduto = partes[0];
+                int qtd = Integer.parseInt(partes[1]);
                 compras.add(new Compra(nomeProduto, qtd));
             }
             br.close();
